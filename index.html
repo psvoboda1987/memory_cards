@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory cards</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="text-center">
+
+    <header class="container mt-10">
+        <h1>Memory Cards</h1>
+    </header>
+
+    <section id="overlay" class="hide">          
+        <form class="maw-400 bg-light-gray border-radius-medium p-30">
+            <span id="close-form" class="float-right bg-orange border-radius-small">&times;</span>
+            <h3 class="d-inline-block">Add New Card</h3>
+
+            <label>Question</label>
+            <textarea type="text" id="question" required></textarea>
+
+            <label>Answer</label>
+            <textarea type="text" id="answer" required></textarea>
+
+            <button id="new_card" class="bg-green white">+ Add Card</button>
+        </form>
+    </section>
+
+    <main class="container">
+        <div id="cards"></div>
+        <div id="controls" class="p-10">
+            <span id="prev" class="button empty">&larr;</span>
+            <span id="counter">no cards</span>
+            <button id="next" class="button empty">&rarr;</button>
+        </div>
+    </main>
+
+    <footer class="container">
+        <button id="add_card" class="bg-blue white">+ Add New Card</button>
+        <br>
+        <button id="clear_cards" class="bg-red white hide">&times; Delete all Cards</button>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
